@@ -1,0 +1,56 @@
+\section{Implementation Results (and comparison with results in the paper if suitable)}
+% Present the results of your implementation and, if relevant, compare them with those in the original paper.
+
+\begin{table}[ht]
+    \centering
+    \caption{Wavelet Feature Classification Accuracy and Computation Time - PNN}
+    \begin{tabular}{l l S[table-format=3.1] S[table-format=3.1] S[table-format=1.6]}
+        \toprule
+        \textbf{Wavelet} & \textbf{Feature} & \textbf{Seizure-Free CA (\%)} & \textbf{Epileptic CA (\%)} & \textbf{CT (s)} \\
+        \midrule
+        db2       & energy       & 100.0 & 96.0 & 0.022755 \\
+        db2       & std          & 99.0  & 96.0 & 0.022401 \\
+        db2       & entropy      & 95.0  & 93.0 & 0.022820 \\
+        db2       & energy\_std  &  100.0 &  96.0 &  0.024049 \\
+        haar      & energy       & 100.0 & 95.0 & 0.022497 \\
+        haar      & std          & 99.0  & 95.0 & 0.022490 \\
+        haar      & entropy      & 97.0  & 94.0 & 0.022393 \\
+        haar      & energy\_std  & 100.0 & 95.0 & 0.023468 \\
+        coif1     & energy       & \cellcolor{green!30} 100.0 & \cellcolor{green!30}97.0 & \cellcolor{green!30} 0.022414 \\
+        coif1     & std          & \cellcolor{green!30} 100.0 & \cellcolor{green!30} 97.0 & \cellcolor{green!30} 0.022316 \\
+        coif1     & entropy      & 98.0  & 95.0 & 0.022542 \\
+        coif1     & energy\_std  & 100.0 & 97.0 & 0.024299 \\
+        bior1.1   & energy       & 100.0 & 95.0 & 0.025277 \\
+        bior1.1   & std          & 99.0  & 95.0 & 0.023129 \\
+        bior1.1   & entropy      & 97.0  & 94.0 & 0.021883 \\
+        bior1.1   & energy\_std  & 100.0 & 95.0 & 0.021977 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \caption{Wavelet Feature Classification Accuracy and Computation Time - SVM}
+    \begin{tabular}{l l S[table-format=3.1] S[table-format=3.1] S[table-format=1.6]}
+        \toprule
+        \textbf{Wavelet} & \textbf{Feature} & \textbf{Seizure-Free CA (\%)} & \textbf{Epileptic CA (\%)} & \textbf{CT (s)} \\
+        \midrule
+        db2       & energy       & 99.0  & 96.0 & 0.001965 \\
+        db2       & std          & 99.0  & 96.0 & 0.002267 \\
+        db2       & entropy      & 91.0  & 96.0 & 0.001377 \\
+        db2       & energy\_std  & 99.0  & 96.0 & 0.001861 \\
+        haar      & energy       & 100.0 & 96.0 & 0.001533 \\
+        haar      & std          & 98.0  & 96.0 & 0.001254 \\
+        haar      & entropy      & 91.0  & 97.0 & 0.001820 \\
+        haar      & energy\_std  & 100.0 & 95.0 & 0.001014 \\
+        coif1     & energy       & \cellcolor{green!30}100.0 & \cellcolor{green!30} 96.0 & \cellcolor{green!30} 0.001922 \\
+        coif1     & std          & 99.0  & 94.0 & 0.001244 \\
+        coif1     & entropy      & 90.0  & 95.0 & 0.001726 \\
+        coif1     & energy\_std  & \cellcolor{green!30} 100.0 & \cellcolor{green!30} 96.0 & \cellcolor{green!30} 0.001533 \\
+        bior1.1   & energy       & 100.0 & 96.0 & 0.001362 \\
+        bior1.1   & std          & 98.0  & 96.0 & 0.001847 \\
+        bior1.1   & entropy      & 91.0  & 97.0 & 0.001859 \\
+        bior1.1   & energy\_std  & 100.0 & 95.0 & 0.002045 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
