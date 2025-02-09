@@ -42,23 +42,6 @@ This project reimplements the paper **"A Comparative Study of Wavelet Families f
 
 ---
 
-## How to Run
-1. **Clone Repository:**
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
-2. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Run Script:**
-   ```bash
-   python main.py
-   ```
-
----
-
 ## References
 1. Gandhi, T., et al. (2011). *A comparative study of wavelet families for EEG signal classification*. Neurocomputing.
 2. Andrzejak, R. G., et al. (2001). *Indications of nonlinear deterministic structures in EEG time series.*
